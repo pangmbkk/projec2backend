@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/educationlevels",
+      "handler": "educationlevel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educationlevels/count",
+      "handler": "educationlevel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educationlevels/:id",
+      "handler": "educationlevel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/educationlevels",
+      "handler": "educationlevel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/educationlevels/:id",
+      "handler": "educationlevel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/educationlevels/:id",
+      "handler": "educationlevel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

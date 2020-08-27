@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "postId": {
+      "type": "string"
+    },
+    "tutorusername": {
+      "type": "string"
+    },
+    "studentusername": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "review": {
+      "type": "richtext"
+    },
+    "doingstatus": {
+      "type": "string"
+    },
+    "announcementposts": {
+      "via": "order",
+      "collection": "announcementpost"
+    }
+  }
+}

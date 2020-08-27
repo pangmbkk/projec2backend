@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announcementposts",
+  "info": {
+    "name": "announcementpost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "educationName": {
+      "type": "string"
+    },
+    "experienceName": {
+      "type": "string"
+    },
+    "provinceName": {
+      "type": "string"
+    },
+    "subjectName": {
+      "type": "string"
+    },
+    "tutorName": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "order": {
+      "model": "order",
+      "via": "announcementposts"
+    }
+  }
+}
