@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/announcementposts": {
+    "/mean-ratings": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the mean-ratings's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve mean-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Announcementpost"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcementpost"
+          "Mean-ratings"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new mean-ratings record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Announcementpost"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Announcementpost"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnnouncementpost"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/announcementposts/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve mean-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Announcementpost"
+          "Mean-ratings"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewMean-ratings"
+              }
+            }
+          }
+        }
       }
     },
-    "/announcementposts/{id}": {
+    "/mean-ratings/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of mean-ratings documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve mean-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Announcementpost"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Announcementpost"
+          "Mean-ratings"
+        ],
+        "parameters": []
+      }
+    },
+    "/mean-ratings/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one mean-ratings record",
+        "responses": {
+          "200": {
+            "description": "Retrieve mean-ratings document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Mean-ratings"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single mean-ratings record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve mean-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Announcementpost"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcementpost"
+          "Mean-ratings"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnnouncementpost"
+                "$ref": "#/components/schemas/NewMean-ratings"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single mean-ratings record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single mean-ratings based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Announcementpost"
+          "Mean-ratings"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Announcementpost": {
+      "Mean-ratings": {
         "required": [
           "id"
         ],
@@ -525,89 +538,10 @@
           "name": {
             "type": "string"
           },
-          "description": {
+          "gte": {
             "type": "string"
           },
-          "detail": {
-            "type": "string"
-          },
-          "educationName": {
-            "type": "string"
-          },
-          "experienceName": {
-            "type": "string"
-          },
-          "provinceName": {
-            "type": "string"
-          },
-          "subjectName": {
-            "type": "string"
-          },
-          "tutorName": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "imageUrl": {
-            "type": "string"
-          },
-          "orders": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "postId": {
-                  "type": "string"
-                },
-                "tutorusername": {
-                  "type": "string"
-                },
-                "studentusername": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string"
-                },
-                "review": {
-                  "type": "string"
-                },
-                "doingstatus": {
-                  "type": "string"
-                },
-                "rating": {
-                  "type": "integer"
-                },
-                "announcementpost": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "meanRating": {
-            "type": "number"
-          },
-          "day": {
-            "type": "object"
-          },
-          "timetostart": {
-            "type": "string"
-          },
-          "timetoend": {
+          "lt": {
             "type": "string"
           },
           "created_by": {
@@ -700,57 +634,15 @@
           }
         }
       },
-      "NewAnnouncementpost": {
+      "NewMean-ratings": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "description": {
+          "gte": {
             "type": "string"
           },
-          "detail": {
-            "type": "string"
-          },
-          "educationName": {
-            "type": "string"
-          },
-          "experienceName": {
-            "type": "string"
-          },
-          "provinceName": {
-            "type": "string"
-          },
-          "subjectName": {
-            "type": "string"
-          },
-          "tutorName": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "imageUrl": {
-            "type": "string"
-          },
-          "orders": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "meanRating": {
-            "type": "number"
-          },
-          "day": {
-            "type": "object"
-          },
-          "timetostart": {
-            "type": "string"
-          },
-          "timetoend": {
+          "lt": {
             "type": "string"
           },
           "created_by": {
@@ -763,9 +655,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Announcementpost"
-    }
-  ]
+  "tags": []
 }

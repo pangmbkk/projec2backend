@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mean-ratings",
+      "handler": "mean-ratings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mean-ratings/count",
+      "handler": "mean-ratings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mean-ratings/:id",
+      "handler": "mean-ratings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mean-ratings",
+      "handler": "mean-ratings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mean-ratings/:id",
+      "handler": "mean-ratings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mean-ratings/:id",
+      "handler": "mean-ratings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

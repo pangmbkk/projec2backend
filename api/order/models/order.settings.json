@@ -27,9 +27,13 @@
     "doingstatus": {
       "type": "string"
     },
-    "announcementposts": {
-      "via": "order",
-      "collection": "announcementpost"
+    "rating": {
+      "type": "integer",
+      "default": 0
+    },
+    "announcementpost": {
+      "via": "orders",
+      "model": "announcementpost"
     }
   }
 }

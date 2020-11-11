@@ -540,55 +540,74 @@
           "doingstatus": {
             "type": "string"
           },
-          "announcementposts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "detail": {
-                  "type": "string"
-                },
-                "educationName": {
-                  "type": "string"
-                },
-                "experienceName": {
-                  "type": "string"
-                },
-                "provinceName": {
-                  "type": "string"
-                },
-                "subjectName": {
-                  "type": "string"
-                },
-                "tutorName": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "order": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "rating": {
+            "type": "integer",
+            "default": 0
+          },
+          "announcementpost": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string"
+              },
+              "educationName": {
+                "type": "string"
+              },
+              "experienceName": {
+                "type": "string"
+              },
+              "provinceName": {
+                "type": "string"
+              },
+              "subjectName": {
+                "type": "string"
+              },
+              "tutorName": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "imageUrl": {
+                "type": "string"
+              },
+              "orders": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "meanRating": {
+                "type": "number"
+              },
+              "day": {
+                "type": "object"
+              },
+              "timetostart": {
+                "type": "string"
+              },
+              "timetoend": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -702,11 +721,12 @@
           "doingstatus": {
             "type": "string"
           },
-          "announcementposts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "rating": {
+            "type": "integer",
+            "default": 0
+          },
+          "announcementpost": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

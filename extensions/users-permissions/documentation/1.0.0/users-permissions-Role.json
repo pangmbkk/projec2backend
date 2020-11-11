@@ -558,6 +558,18 @@
                 "role": {
                   "type": "string"
                 },
+                "fname": {
+                  "type": "string"
+                },
+                "lname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "education": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

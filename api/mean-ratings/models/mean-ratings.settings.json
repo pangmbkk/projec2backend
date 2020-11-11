@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mean_ratings",
+  "info": {
+    "name": "meanRatings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "gte": {
+      "type": "string"
+    },
+    "lt": {
+      "type": "string"
+    }
+  }
+}

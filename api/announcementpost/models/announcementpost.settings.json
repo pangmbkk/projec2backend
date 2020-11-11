@@ -39,9 +39,24 @@
     "email": {
       "type": "string"
     },
-    "order": {
-      "model": "order",
-      "via": "announcementposts"
+    "imageUrl": {
+      "type": "string"
+    },
+    "orders": {
+      "collection": "order",
+      "via": "announcementpost"
+    },
+    "meanRating": {
+      "type": "float"
+    },
+    "day": {
+      "type": "json"
+    },
+    "timetostart": {
+      "type": "string"
+    },
+    "timetoend": {
+      "type": "string"
     }
   }
 }
